@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Scripts}{3}
+\contentsline {subsection}{\numberline {1.1}Review Counting}{3}
+\contentsline {subsection}{\numberline {1.2}Average Review Score}{3}
+\contentsline {subsection}{\numberline {1.3}t-Testing}{3}
+\contentsline {section}{\numberline {2}Hypothesis Testing}{4}
+\contentsline {section}{\numberline {3}Discussion}{4}

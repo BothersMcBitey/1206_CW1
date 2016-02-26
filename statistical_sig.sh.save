@@ -1,0 +1,11 @@
+#!/bin/bash
+
+findTValue $1
+findTValue $2
+
+function findTValue{
+	scores[]
+	for i in $(grep "<Overall>" $1 | sed "s/<Overall>//g"); do
+	
+	done
+}

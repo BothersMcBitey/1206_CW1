@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{color}
+
+\definecolor{green}{rgb}{0,0.4,0}
+\definecolor{grey}{rgb}{0.9,0.9,0.9}
+\definecolor{red}{rgb}{0.6,0,0}
+\definecolor{blue}{rgb}{0,0,0.6}
+
+\lstset{language=bash,
+	title=\lstname,
+	basicstyle=\scriptsize,
+	captionpos=b,
+	frame=single,
+	breaklines=true,
+	breakatwhitespace=true,
+	backgroundcolor=\color{grey},
+	keywordstyle=\bfseries,
+	commentstyle=\color{green},
+	identifierstyle=\color{blue},
+	stringstyle=\color{red},
+	keywords={grep,cut,cat,sort,tr,bc,rm,wc,sed,echo,in,for,done,do,
+	if,then,else,fi},
+	numbers=left,
+	showstringspaces=false,
+	tabsize=2}
+
+
+\title{Comp1204 Unix Coursework}
+\author{Callum Anderson \\ crea1g15}
+\date{February 24, 2016}
+
+\begin{document}
+	
+	\maketitle
+	\newpage
+	
+	\tableofcontents
+	\newpage
+	
+	\section{Scripts}
+		\subsection{Review Counting}
+		
+			This script searches a folder (given as an argument) for .dat files and counts the number of reviews in each file.
+			
+			\lstinputlisting{countreviews.sh}
+			
+			Line 4 removes the extension and directory path from the filename, so the hotel name itself can be printed next to the review count. The for loop goes through each file, and then pipes a string of format "\$hotelname \$reviewcount" into sort, which prints out the sorted list of hotels.
+			
+		\subsection{Average Review Score}
+		
+			This script runs through all .dat files in the given folder and finds the average review score for each hotel, then prints the sorted list to the terminal.
+		
+			\lstinputlisting{averagereviews.sh}
+			
+			Line 8 loops through each line in the file containing "<Overall>", removing the 'overall' tag from it so it's just a number. Line 10 removes any linebreak characters that still remain.
+		
+		\subsection{t-Testing}
+		
+			This script takes two hotel names and calculates if their is a 
+		
+			\lstinputlisting{statistical_sig.sh}
+		
+	\section{Hypothesis Testing}
+	
+	\section{Discussion}
+
+\end{document}
