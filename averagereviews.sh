@@ -1,7 +1,6 @@
 #!/bin/bash
 
 for filename in $1/*.dat; do
-	echo $filename
 	name=$(echo $filename | cut -d/ -f2 | cut -d. -f1)	
 	sum=0
 	count=0
